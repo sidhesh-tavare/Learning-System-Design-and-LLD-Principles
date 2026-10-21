@@ -19,7 +19,6 @@ class ReadableSink(Protocol):
     def read_all(self) -> list[str]:
         ...
 
-
 class ConsoleSink:
     def write(self, report: str) -> None:
         print(report)
